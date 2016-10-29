@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Студенческий сервис №1</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -26,7 +27,7 @@
 
 <main class="container">
     <div class="index-logo">
-        <img src="img/index-logo.png" width="368" height="204" alt="Студенческий сервис №1">
+        <img src="images/index-logo.png" width="368" height="204" alt="Студенческий сервис №1">
     </div>
     <section class="features">
         <div class="features-item">
@@ -35,7 +36,8 @@
             <b class="features-name">Качественно</b>
             <p>Качество выполненной работы на очень высоком уровне. Все проверяется в системе antiplagiat!</p>
             <b class="features-name">Надежно</b>
-            <p>Мы работаем уже больше 10 лет, и с каждым годом инструменты работы со студентами и авторами совершенствуются!</p>
+            <p>Мы работаем уже больше 10 лет, и с каждым годом инструменты работы со студентами и авторами
+                совершенствуются!</p>
         </div>
     </section>
 
@@ -44,7 +46,8 @@
             <h2 class="index-content-title">Новости</h2>
             <ul class="news-preview">
                 <li>
-                    <p>Акция для студентов! Приведи друзей и заработай. Больше друзей, больше заработков. Или получи работу бесплатно!</p>
+                    <p>Акция для студентов! Приведи друзей и заработай. Больше друзей, больше заработков. Или получи
+                        работу бесплатно!</p>
                     <time datatype="2016-10-30">30 октября</time>
                 </li>
                 <li>
@@ -55,11 +58,66 @@
             <a href="#" class="btn">Все новости</a>
         </div>
         <div class="index-content-right">
+            <h2 class="index-content-title">Примеры работ</h2>
+            <div class="gallery">
+                <figure class="gallery-content">
+                    <img src="images/photo-1.jpg" width="286" height="164" alt="">
+                </figure>
+                <button class="btn gallery-prev">Назад</button>
+                <button class="btn gallery-next">Вперед</button>
+            </div>
 
         </div>
     </div>
-
+    <div class="index-content">
+        <div class="index-content-left">
+            <h2 class="index-content-title">Контактная информация</h2>
+            <p>
+                Студенческий сервис №1<br>
+                Skype: StudHouse<br>
+                Vk: vk.com/studhouse
+            </p>
+            <p>
+                Время работы:<br>
+                Заказы принимаем круглосуточно<br>
+                Менеджеры и авторы отвечают на запросы по мере нагрузки<br>
+                Среднее время ожидания ответа - 40 минут
+            </p>
+            <a href="#" class="btn">Наши менеджеры</a>
+            <a href="#" class="btn">Обратная связь</a>
+        </div>
+        <div class="index-content-right">
+            <h2 class="index-content-title">Заказать работу</h2>
+            <p>Заполните форму и наш менеджер свяжется с вами для уточнения деталей и подтверждения заказа</p>
+            <form class="order-form" action="order-form.php" method="post">
+                <input type="text" name="name" placeholder="Укажите свое имя">
+                <input type="text" name="type" placeholder="Укажите вид работы">
+                <input type="text" name="time" placeholder="На когда нужно">
+                <input type="text" name="vk" placeholder="Ссылка на страницу ВК">
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </main>
+<footer class="main-footer">
+    <div class="container">
+     <section class="footer-contacts">
+         <a href="">Наши ресурсы</a><br>
+         <a href="">Отзывы</a>
+     </section>
+        <section class="footer-social">
+            <p>Мы в социальных сетях</p>
+            <a href="#" class="social-btn social-btn-vk">Вконтатке</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-od">Одноклассники</a>
+        </section>
+        <section class="footer-copyright">
+            <p>Разработано:</p>
+            <a href="https://vk.com/mokrij_yurij" class="btn">Y.A.Mokrij</a>
+        </section>
+
+    </div>
+</footer>
 
 </body>
 </html>
